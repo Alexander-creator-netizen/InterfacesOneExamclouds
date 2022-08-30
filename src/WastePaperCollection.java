@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class WastePaperCollection {
 
@@ -15,7 +16,7 @@ public class WastePaperCollection {
         Magazines journalTwo = new Magazines("A journey through the cosmic expanses");
         Magazines journalThree = new Magazines("Crosswords");
 
-        ArrayList<Object> checkList = new ArrayList<>();
+        LinkedList<Object> checkList = new LinkedList<>();
 
         checkList.add(bookOne);
         checkList.add(bookTwo);
@@ -24,8 +25,8 @@ public class WastePaperCollection {
         checkList.add(journalTwo);
         checkList.add(journalThree);
 
-        ArrayList<Object> booksList = new ArrayList<>();
-        ArrayList<Object> journalList = new ArrayList<>();
+        LinkedList<Object> booksList = new LinkedList<>();
+        LinkedList<Object> journalList = new LinkedList<>();
 
         for (Object arrayList : checkList) {
             if (arrayList instanceof Books) {

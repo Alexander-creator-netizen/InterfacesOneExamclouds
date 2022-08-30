@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public interface ShowInfo {
 
-    void showInfo(ArrayList arrayList);
+    void showInfo(LinkedList arrayList);
 
 
 }
