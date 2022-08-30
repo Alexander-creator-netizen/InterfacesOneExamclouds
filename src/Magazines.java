@@ -1,6 +1,6 @@
 public class Magazines {
 
-    String nameJournal;
+    private String nameJournal;
 
     public Magazines(String nameJournal) {
         this.nameJournal = nameJournal;

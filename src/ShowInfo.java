@@ -2,7 +2,14 @@ import java.util.List;
 
 public interface ShowInfo {
 
-    void showInfo(List arrayList);
+    default void showInfo(List arrayList) {
 
+        System.out.println(getText());
 
+        for (Object arrayListOne : arrayList) {
+            System.out.println(arrayListOne.toString());
+        }
+    }
+
+    String getText();
 }

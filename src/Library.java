@@ -1,13 +1,8 @@
-import java.util.List;
-
-public class Library implements ShowInfo {
+public class Library extends Building implements ShowInfo {
 
     @Override
-    public void showInfo(List arrayList) {
-        System.out.println("Books list:");
-        for (Object arrayList1 : arrayList) {
-            System.out.println(arrayList1.toString());
-        }
-        System.out.println();
+    public String getText() {
+        return "Book list: ";
     }
 }
+

@@ -36,6 +36,7 @@ public class WastePaperCollection {
         }
 
         library.showInfo(booksList);
+        System.out.println();
         bookShop.showInfo(journalList);
     }
 }
