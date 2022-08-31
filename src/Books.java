@@ -1,4 +1,4 @@
-public class Books {
+public class Books extends PrintedProduct {
 
     private String bookName;
 

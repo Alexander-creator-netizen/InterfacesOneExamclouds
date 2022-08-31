@@ -7,15 +7,15 @@ public class WastePaperCollection {
 
     public static void main(String[] args) {
 
-        Books bookOne = new Books("Harry Potter");
-        Books bookTwo = new Books("The Master and Margarita");
-        Books bookThree = new Books("War and peace");
+        PrintedProduct bookOne = new Books("Harry Potter");
+        PrintedProduct bookTwo = new Books("The Master and Margarita");
+        PrintedProduct bookThree = new Books("War and peace");
 
-        Magazines journalOne = new Magazines("Fashion today");
-        Magazines journalTwo = new Magazines("A journey through the cosmic expanses");
-        Magazines journalThree = new Magazines("Crosswords");
+        PrintedProduct journalOne = new Magazines("Fashion today");
+        PrintedProduct journalTwo = new Magazines("A journey through the cosmic expanses");
+        PrintedProduct journalThree = new Magazines("Crosswords");
 
-        ArrayList<Object> checkList = new ArrayList<>();
+        ArrayList<PrintedProduct> checkList = new ArrayList<>();
 
         checkList.add(bookOne);
         checkList.add(bookTwo);
@@ -24,16 +24,18 @@ public class WastePaperCollection {
         checkList.add(journalTwo);
         checkList.add(journalThree);
 
-        ArrayList <Object> booksList = new ArrayList<>();
-        ArrayList <Object> journalList = new ArrayList<>();
+        ArrayList booksList = new ArrayList();
+        ArrayList journalList = new ArrayList();
 
-        for (Object arrayList : checkList) {
-            if (arrayList instanceof Books) {
-                booksList.add(arrayList);
+        for (PrintedProduct printedProduct : checkList) {
+            if (printedProduct instanceof Books) {
+                booksList.add(printedProduct);
             } else {
-                journalList.add(arrayList);
+                journalList.add(printedProduct);
             }
+
         }
+
 
         library.showInfo(booksList);
         System.out.println();

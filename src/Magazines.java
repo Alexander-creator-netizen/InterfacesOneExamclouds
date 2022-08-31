@@ -1,4 +1,4 @@
-public class Magazines {
+public class Magazines extends PrintedProduct {
 
     private String nameJournal;
 
