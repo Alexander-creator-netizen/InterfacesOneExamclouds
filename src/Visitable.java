@@ -1,8 +1,5 @@
 public interface Visitable {
 
-    default void visit(String human, Object build) {
-        System.out.println(human + infoBuilding(build));
-    }
+    void visit(Person human);
 
-    String infoBuilding (Object object);
 }

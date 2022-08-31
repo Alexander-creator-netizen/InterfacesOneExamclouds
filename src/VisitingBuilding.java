@@ -5,12 +5,11 @@ public class VisitingBuilding {
         Library library = new Library();
         BookShop bookShop = new BookShop();
 
-        visitorOne.visit(visitorOne.toString(), library);
-        visitorOne.visit(visitorOne.toString(), bookShop);
+        library.visit(visitorOne);
+        bookShop.visit(visitorOne);
         System.out.println();
-        visitorOne.visit(visitorTwo.toString(), library);
-        visitorOne.visit(visitorTwo.toString(), bookShop);
-
+        library.visit(visitorTwo);
+        bookShop.visit(visitorTwo);
 
     }
 }
