@@ -10,9 +10,9 @@ public class Person {
         this.name = name;
     }
 
-    private Set<ArrayList> printedProductSet = new HashSet<java.util.ArrayList>();
+    private Set<PrintedProduct> printedProductSet = new HashSet<>();
 
-    public Set<ArrayList> getPrintedProductSet() {
+    public Set<PrintedProduct> getPrintedProductSet() {
         return printedProductSet;
     }
 
