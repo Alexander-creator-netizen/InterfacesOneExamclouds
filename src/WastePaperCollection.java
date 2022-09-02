@@ -15,7 +15,7 @@ public class WastePaperCollection {
         PrintedProduct journalTwo = new Magazines("A journey through the cosmic expanses");
         PrintedProduct journalThree = new Magazines("Crosswords");
 
-        ArrayList<PrintedProduct> checkList = new ArrayList<>();
+        ArrayList <PrintedProduct> checkList = new ArrayList<>();
 
         checkList.add(bookOne);
         checkList.add(bookTwo);
@@ -35,6 +35,8 @@ public class WastePaperCollection {
             }
 
         }
+
+
 
 
         library.showInfo(booksList);

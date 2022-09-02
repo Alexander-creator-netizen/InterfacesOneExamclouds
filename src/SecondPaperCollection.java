@@ -6,15 +6,15 @@ public class SecondPaperCollection {
 
     public static void main(String[] args) {
 
-        Books bookOne = new Books("Harry Potter");
-        Books bookTwo = new Books("The Master and Margarita");
-        Books bookThree = new Books("War and peace");
+        PrintedProduct bookOne = new Books("Harry Potter");
+        PrintedProduct bookTwo = new Books("The Master and Margarita");
+        PrintedProduct bookThree = new Books("War and peace");
 
-        Magazines journalOne = new Magazines("Fashion today");
-        Magazines journalTwo = new Magazines("A journey through the cosmic expanses");
-        Magazines journalThree = new Magazines("Crosswords");
+        PrintedProduct journalOne = new Magazines("Fashion today");
+        PrintedProduct journalTwo = new Magazines("A journey through the cosmic expanses");
+        PrintedProduct journalThree = new Magazines("Crosswords");
 
-        LinkedList<Object> checkList = new LinkedList<>();
+        LinkedList <PrintedProduct> checkList = new LinkedList<>();
 
         checkList.add(bookOne);
         checkList.add(bookTwo);
@@ -23,10 +23,10 @@ public class SecondPaperCollection {
         checkList.add(journalTwo);
         checkList.add(journalThree);
 
-        LinkedList<Object> booksList = new LinkedList<>();
-        LinkedList<Object> journalList = new LinkedList<>();
+        LinkedList booksList = new LinkedList<>();
+        LinkedList journalList = new LinkedList<>();
 
-        for (Object linkedList : checkList) {
+        for (PrintedProduct linkedList : checkList) {
             if (linkedList instanceof Books) {
                 booksList.add(linkedList);
             } else {

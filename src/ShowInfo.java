@@ -2,11 +2,11 @@ import java.util.List;
 
 public interface ShowInfo {
 
-    default void showInfo(List arrayList) {
+    default void showInfo(List <PrintedProduct> arrayList) {
 
         System.out.println(getText());
 
-        for (Object arrayListOne : arrayList) {
+        for (PrintedProduct arrayListOne : arrayList) {
             System.out.println(arrayListOne.toString());
         }
     }
